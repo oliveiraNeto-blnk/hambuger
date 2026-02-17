@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger House Gourmet | Feito com obsessão, servido com paixão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#hero" class="logo">Burger House <span>Gourmet</span></a>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#historia">Nossa História</a></li>
+        <li><a href="#ingredientes">Ingredientes</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content animate-in">
+        <h1 class="hero-title">Feito com obsessão,<br>servido com paixão.</h1>
+        <p class="hero-subtitle">Hambúrgueres artesanais que contam uma história em cada mordida.</p>
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+      </div>
+      <div class="hero-image animate-in delay-1">
+        <div class="hero-burger"></div>
+      </div>
+    </section>
+
+    <!-- Cardápio Interativo -->
+    <section id="cardapio" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Cardápio</h2>
+        <p class="section-subtitle">Escolha sua combinação perfeita</p>
+        <div class="filtros">
+          <button class="filtro active" data-categoria="todos">Todos</button>
+          <button class="filtro" data-categoria="classicos">Clássicos</button>
+          <button class="filtro" data-categoria="especiais">Especiais</button>
+          <button class="filtro" data-categoria="veganos">Veganos</button>
+          <button class="filtro" data-categoria="combos">Combos</button>
+        </div>
+        <div class="cardapio-grid">
+          <article class="card-item" data-categoria="classicos">
+            <div class="card-image-wrap">
+              <div class="card-image card-1"></div>
+              <span class="badge-mais-pedido">Mais Pedido</span>
+            </div>
+            <div class="card-body">
+              <h3>House Classic</h3>
+              <p>Blend angus 180g, queijo cheddar, alface, tomate, cebola roxa e molho da casa no pão brioche.</p>
+              <span class="preco">R$ 42,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="classicos">
+            <div class="card-image-wrap">
+              <div class="card-image card-2"></div>
+            </div>
+            <div class="card-body">
+              <h3>Bacon Bliss</h3>
+              <p>Angus, bacon crocante, cheddar, cebola caramelizada e molho barbecue no brioche.</p>
+              <span class="preco">R$ 48,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="especiais">
+            <div class="card-image-wrap">
+              <div class="card-image card-3"></div>
+              <span class="badge-mais-pedido">Mais Pedido</span>
+            </div>
+            <div class="card-body">
+              <h3>Trufa & Queijo</h3>
+              <p>Blend angus, queijo brie, cogumelos salteados, molho de trufa negra e rúcula no brioche.</p>
+              <span class="preco">R$ 58,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="especiais">
+            <div class="card-image-wrap">
+              <div class="card-image card-4"></div>
+            </div>
+            <div class="card-body">
+              <h3>Blue Cheese</h3>
+              <p>Angus 180g, gorgonzola cremoso, pera caramelizada, nozes e mel no pão brioche.</p>
+              <span class="preco">R$ 52,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="veganos">
+            <div class="card-image-wrap">
+              <div class="card-image card-5"></div>
+            </div>
+            <div class="card-body">
+              <h3>Green House</h3>
+              <p>Hambúrguer de grão-de-bico e ervas, abacate, tomate seco, rúcula e maionese vegana.</p>
+              <span class="preco">R$ 44,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="veganos">
+            <div class="card-image-wrap">
+              <div class="card-image card-6"></div>
+            </div>
+            <div class="card-body">
+              <h3>Smoky Jackfruit</h3>
+              <p>Jackfruit defumada, repolho roxo, picles e molho chipotle vegano no brioche integral.</p>
+              <span class="preco">R$ 46,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="combos">
+            <div class="card-image-wrap">
+              <div class="card-image card-7"></div>
+            </div>
+            <div class="card-body">
+              <h3>Combo Duplo</h3>
+              <p>Dois House Classic + batata frita + refrigerante ou suco. Ideal para compartilhar.</p>
+              <span class="preco">R$ 78,00</span>
+            </div>
+          </article>
+          <article class="card-item" data-categoria="combos">
+            <div class="card-image-wrap">
+              <div class="card-image card-8"></div>
+            </div>
+            <div class="card-body">
+              <h3>Combo Família</h3>
+              <p>Quatro burgers à escolha + duas porções de batata + quatro bebidas.</p>
+              <span class="preco">R$ 149,00</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section id="historia" class="section section-charcoal">
+      <div class="container historia-grid">
+        <div class="historia-imagem">
+          <div class="historia-img"></div>
+        </div>
+        <div class="historia-texto">
+          <h2 class="section-title">Nossa História</h2>
+          <p>Em 2015, abrimos as portas com um sonho simples: servir o melhor hambúrguer artesanal da cidade. Desde o primeiro dia, a obsessão por ingredientes de qualidade nos guia.</p>
+          <p>Fazemos nosso pão brioche diariamente na casa, selecionamos carnes angus de fornecedores de confiança e criamos molhos autorais que viraram assinatura. Cada burger é montado com cuidado e servido com a paixão de quem acredita que um bom hambúrguer pode ser uma experiência memorável.</p>
+          <p>Hoje, continuamos no mesmo endereço, com a mesma filosofia: nada de atalhos. Só o que é feito com as mãos e com o coração.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ingredientes Premium -->
+    <section id="ingredientes" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Ingredientes Premium</h2>
+        <p class="section-subtitle">O que nos torna diferentes</p>
+        <div class="ingredientes-grid">
+          <div class="ingrediente-card">
+            <div class="ingrediente-icon">🥩</div>
+            <h3>Carne Angus 180g</h3>
+            <p>Corte selecionado, blend próprio e ponto sob encomenda para máximo sabor.</p>
+          </div>
+          <div class="ingrediente-card">
+            <div class="ingrediente-icon">🍞</div>
+            <h3>Pão Brioche Artesanal</h3>
+            <p>Produzido na casa todos os dias: fofo, levemente doce e dourado.</p>
+          </div>
+          <div class="ingrediente-card">
+            <div class="ingrediente-icon">🧀</div>
+            <h3>Queijos Importados</h3>
+            <p>Cheddar, brie, gorgonzola e outros queijos de primeira para cada receita.</p>
+          </div>
+          <div class="ingrediente-card">
+            <div class="ingrediente-icon">🥫</div>
+            <h3>Molhos Autorais</h3>
+            <p>Molho da casa, barbecue, trufa e chipotle — receitas exclusivas Burger House.</p>
+          </div>
+          <div class="ingrediente-card">
+            <div class="ingrediente-icon">🥬</div>
+            <h3>Vegetais Frescos</h3>
+            <p>Alface, tomate, rúcula, cebola e acompanhamentos sempre frescos do dia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="section section-charcoal">
+      <div class="container">
+        <h2 class="section-title">O que dizem os clientes</h2>
+        <p class="section-subtitle">Experiências reais na Burger House</p>
+        <div class="depoimentos-carrossel">
+          <button class="carrossel-btn prev" aria-label="Anterior">‹</button>
+          <div class="depoimentos-track">
+            <div class="depoimento active">
+              <div class="depoimento-avatar a1"></div>
+              <h3>Marina Silva</h3>
+              <div class="estrelas">★★★★★</div>
+              <p>"O House Classic é o melhor hambúrguer que já comi. O pão brioche e o molho da casa são irresistíveis. Volto toda semana!"</p>
+            </div>
+            <div class="depoimento">
+              <div class="depoimento-avatar a2"></div>
+              <h3>Ricardo Mendes</h3>
+              <div class="estrelas">★★★★★</div>
+              <p>"Experimentei o Trufa & Queijo e fiquei impressionado. Ingredientes de altíssima qualidade e atendimento impecável."</p>
+            </div>
+            <div class="depoimento">
+              <div class="depoimento-avatar a3"></div>
+              <h3>Ana Costa</h3>
+              <div class="estrelas">★★★★★</div>
+              <p>"Sou vegana e o Green House superou todas as expectativas. Ambiente aconchegante e cardápio diversificado."</p>
+            </div>
+            <div class="depoimento">
+              <div class="depoimento-avatar a4"></div>
+              <h3>Pedro Oliveira</h3>
+              <div class="estrelas">★★★★★</div>
+              <p>"Combo Família perfeito para reunir a galera. Preço justo e hambúrgueres que fedem qualidade. Recomendo demais!"</p>
+            </div>
+          </div>
+          <button class="carrossel-btn next" aria-label="Próximo">›</button>
+        </div>
+        <div class="carrossel-dots"></div>
+      </div>
+    </section>
+
+    <!-- Localização e Contato -->
+    <section id="contato" class="section section-dark">
+      <div class="container contato-layout">
+        <div class="contato-info">
+          <h2 class="section-title">Localização e Contato</h2>
+          <address>
+            <p><strong>Endereço</strong><br>Rua dos Sabores, 123 — Centro<br>São Paulo, SP</p>
+            <p><strong>Horário</strong><br>Terça a Domingo: 12h às 23h</p>
+            <p><strong>Telefone</strong><br><a href="tel:+5511999998888">(11) 99999-8888</a></p>
+            <p><strong>Instagram</strong><br><a href="https://instagram.com/burgerhousegourmet" target="_blank" rel="noopener">@burgerhousegourmet</a></p>
+          </address>
+          <div class="mapa-decorativo">
+            <div class="mapa-placeholder">
+              <span>Mapa</span>
+              <small>São Paulo, SP</small>
+            </div>
+          </div>
+        </div>
+        <form class="form-contato" action="#" method="post">
+          <h3>Reserva ou contato</h3>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="seu@email.com">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Reserva de mesa, dúvidas ou elogios..."></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Burger House Gourmet — Feito com obsessão, servido com paixão.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
