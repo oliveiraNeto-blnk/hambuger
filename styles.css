@@ -383,7 +383,12 @@ a:hover {
 .card-item:hover .card-image {
   transform: scale(1.08);
 }
-.card-1 { background: linear-gradient(135deg, #5c4033 0%, #3d2a22 100%); }
+.card-1 {
+  background: linear-gradient(135deg, #5c4033 0%, #3d2a22 100%);
+  background-image: url('assets/house-classic.png');
+  background-size: cover;
+  background-position: center;
+}
 .card-2 { background: linear-gradient(135deg, #6b4423 0%, #4a3018 100%); }
 .card-3 { background: linear-gradient(135deg, #4a3c2a 0%, #2d2518 100%); }
 .card-4 { background: linear-gradient(135deg, #3d3528 0%, #2a241a 100%); }
