@@ -23,7 +23,6 @@
 
   // ===== Animação de entrada do Hero =====
   const heroContent = document.querySelector('.hero-content');
-  const heroImage = document.querySelector('.hero-image');
   const observerOptions = { threshold: 0.2, rootMargin: '0px 0px -40px 0px' };
 
   const observer = new IntersectionObserver((entries) => {
@@ -35,7 +34,6 @@
   }, observerOptions);
 
   if (heroContent) observer.observe(heroContent);
-  if (heroImage) observer.observe(heroImage);
 
   // ===== Filtros do cardápio =====
   const filtros = document.querySelectorAll('.filtro');
