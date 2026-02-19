@@ -94,21 +94,4 @@
     });
   }
 
-  // ===== Formulário de contato =====
-  const form = document.querySelector('.form-contato');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const originalText = btn.textContent;
-      btn.textContent = 'Enviado!';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        form.reset();
-      }, 2000);
-    });
-  }
-
 })();
